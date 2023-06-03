@@ -1,0 +1,4 @@
+C:\Users\USER\OneDrive\桌面\程式語言與應用\Final_5_25-master\Final_5_25\x64\Debug\Final_5_25.vcxproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\桌面\程式語言與應用\Final_5_25-master\Final_5_25\x64\Debug\Final_5_25.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\USER\OneDrive\桌面\程式語言與應用\Final_5_25-master\Final_5_25\x64\Debug\Final_5_25.Form1.resources
+C:\Users\USER\OneDrive\桌面\程式語言與應用\Final_5_25-master\Final_5_25\x64\Debug\Final_5_25.vcxproj.GenerateResource.cache

@@ -50,6 +50,7 @@ namespace CppCLRWinformsProjekt {
 			Image^ image_right = Image::FromFile("C:/Users/USER/OneDrive/桌面/程式語言與應用/Final_5_25-master/resource/right.png");
 			Image^ image_down = Image::FromFile("C:/Users/USER/OneDrive/桌面/程式語言與應用/Final_5_25-master/resource/down.png");
 			Image^ image_stop = Image::FromFile("C:/Users/USER/OneDrive/桌面/程式語言與應用/Final_5_25-master/resource/stop.png");
+			Image^ image_char = Image::FromFile("C:/Users/USER/OneDrive/桌面/程式語言與應用/Final_5_25-master/resource/mage.ico");
 
 			// 設置按鈕的背景圖像
 			button1->BackgroundImage = image_up;
@@ -57,6 +58,7 @@ namespace CppCLRWinformsProjekt {
 			button3->BackgroundImage = image_right;
 			button4->BackgroundImage = image_down;
 			button5->BackgroundImage = image_stop;
+			panel2->BackgroundImage = image_char;
 
 			
 
@@ -85,8 +87,10 @@ namespace CppCLRWinformsProjekt {
 	private: System::Windows::Forms::ProgressBar^ progressBar3;
 	private: System::Windows::Forms::ProgressBar^ progressBar2;
 	private: System::Windows::Forms::ProgressBar^ progressBar1;
-	private: System::Windows::Forms::Panel^ panel2;
 	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Panel^ panel2;
+
+
 	protected:
 	private: System::ComponentModel::IContainer^ components;
 
@@ -116,8 +120,8 @@ namespace CppCLRWinformsProjekt {
 			this->progressBar3 = (gcnew System::Windows::Forms::ProgressBar());
 			this->progressBar2 = (gcnew System::Windows::Forms::ProgressBar());
 			this->progressBar1 = (gcnew System::Windows::Forms::ProgressBar());
-			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -232,31 +236,31 @@ namespace CppCLRWinformsProjekt {
 			this->progressBar1->TabIndex = 5;
 			this->progressBar1->Click += gcnew System::EventHandler(this, &Form1::progressBar1_Click);
 			// 
-			// panel2
-			// 
-			this->panel2->Location = System::Drawing::Point(517, 396);
-			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(101, 109);
-			this->panel2->TabIndex = 5;
-			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form1::panel2_Paint);
-			// 
 			// button5
 			// 
 			this->button5->Location = System::Drawing::Point(1214, 577);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(50, 50);
 			this->button5->TabIndex = 6;
-			this->button5->Text = L"button5";
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &Form1::button5_Click);
+			// 
+			// panel2
+			// 
+			this->panel2->BackColor = System::Drawing::Color::Transparent;
+			this->panel2->Location = System::Drawing::Point(478, 265);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(70, 95);
+			this->panel2->TabIndex = 8;
+			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form1::panel2_Paint);
 			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 12);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1332, 688);
-			this->Controls->Add(this->button5);
 			this->Controls->Add(this->panel2);
+			this->Controls->Add(this->button5);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
@@ -318,6 +322,5 @@ private: System::Void progressBar1_Click(System::Object^ sender, System::EventAr
 }
 private: System::Void panel2_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
 }
-
 };
 }
